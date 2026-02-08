@@ -1,0 +1,16 @@
+[workspace]
+name = "gpu-counter"
+version = "0.1.0"
+description = "GPU Counter Mojo Project - Count GPUs and GPU cores"
+channels = [
+    "https://conda.modular.com/max-nightly/",
+    "conda-forge"
+]
+platforms = ["linux-64"]
+
+[dependencies]
+mojo = "*"
+
+[tasks]
+hello = "mojo hello_world.mojo"
+run = "mojo vector_add.mojo"
